@@ -8,9 +8,49 @@
   </head>
   <body>
     <div id="root"></div>
-    <div> 
-      <h1>KIDDOSSORI</h1>
-    </div>
+    <body>
+      <header>
+          <h1 id="title">KIDDOSSORI</h1>
+      </header>
+  
+      <br>
+      <h3>Buscar Juego</h3>
+      <div>
+          <input type="text" id="search-input" placeholder="Ingrese el nombre del producto">
+          <button id="search-button">Buscar</button>
+          <div id="stock-message"></div>
+      </div>
+      
+      <h2>Productos</h2>
+      <div class="todo">
+          <aside>
+              <nav>
+                  <ul class="navbar">
+                      <li>
+                          <button class="boton-menu boton-nav active"><i class="bi bi-bricks"></i> TODOS LOS JUEGOS</button>
+                      </li>
+                  </ul>
+              </nav>
+          </aside>
+          <main>
+              <div id="products-container">
+              </div>
+              <div id="total-message"></div>
+              <div id="cart-products"></div>
+  
+              <button id="empty-cart-button">Vaciar Carrito</button>
+  
+              <div id="cart-modal" class="hidden">
+                  <!-- contenido del carrito -->
+                  <h2>Carrito de Compras</h2>
+                  <div id="cart-items"></div>
+                  <button id="finalizar-compra">Finalizar Compra</button>
+                  <button id="close-cart-button">Cerrar</button>
+              </div>
+  
+              <p id="purchase-message"></p>
+          </main>
+      </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
