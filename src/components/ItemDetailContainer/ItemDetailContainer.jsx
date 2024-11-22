@@ -3,10 +3,7 @@ import {getProducts} from "../../data/data.js"
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { getProducts } from "./path/to/your/data"; // Asegúrate de que la ruta de importación es correcta
-import ItemDetail from "./ItemDetail";
+
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState({});
